@@ -1,0 +1,14 @@
+language: php
+php:
+  - '7.0'
+before_script:
+  - echo $TRAVIS_COMMIT
+  - echo $TRAVIS_COMMIT_RANGE
+  - echo $TRAVIS_EVENT_TYPE
+  - echo $TRAVIS_PULL_REQUEST
+  - echo $TRAVIS_PULL_REQUEST_BRANCH
+  - echo $TRAVIS_PULL_REQUEST_SHA
+  - echo $TRAVIS_REPO_SLUG
+  - echo $TRAVIS_TEST_RESULT
+notifications:
+  email: false
